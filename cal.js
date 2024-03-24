@@ -9,6 +9,7 @@ const monthNames = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct",
 
 function selections() {
     location.reload();
+    return false;
 }
 
 // This for loop populates the starting weekday of each month in the array firstDay of Month
