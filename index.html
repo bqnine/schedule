@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="cal.css"> 
+</head>
+<body onload="startingFunction();">
+
+    <form id="selections"> 
+        <div id="boroselection">
+          <input type="radio" id="brooklyn" name="boro" value="brooklyn">
+          <label for="brooklyn">Brooklyn</label>
+          <input type="radio" id="queens" name="boro" value="queens" checked="checked">
+          <label for="group 1">Queens</label>
+              
+          <input type="radio" id="shift8" name="shift" value="eighthours">
+          <label for="eight hours">Eight Hours</label>
+          <input type="radio" id="shift12" name="shift" value="twelvehours" checked="checked">
+          <label for="twelve hours">Twelve Hours</label>
+        </div>
+        
+        <div id="groupselection">
+          <select name="name" id="selectgroup">
+            <option value="0">Group 1</option>
+            <option value="1">Group 2</option>
+            <option value="2">Group 3</option>
+            <option value="3">Group 4</option>
+            <option value="4">Group 5</option>
+          </select>
+  
+          <select name="year" id="selectyear">
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+  
+        <input id="submitbutton" type="submit" value="Submit" />    
+      </form>
+      </div>    
+   
+    
+    <div id="year">This is where the year value goes!!!</div>
+    <div class="flex-container">
+    <div class="month">
+        <h1 id="january">January</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="jan1"></td>
+                    <td id="jan2"></td>
+                    <td id="jan3"></td>
+                    <td id="jan4"></td>
+                    <td id="jan5"></td>
+                    <td id="jan6"></td>
+                    <td id="jan7"></td>
+                </tr>
+                <tr>
+                    <td id="janday1"></td>
+                    <td id="janday2"></td>
+                    <td id="janday3"></td>
+                    <td id="janday4"></td>
+                    <td id="janday5"></td>
+                    <td id="janday6"></td>
+                    <td id="janday7"></td>
+                </tr>
+                <tr>
+                    <td id="jan8"></td>
+                    <td id="jan9"></td>
+                    <td id="jan10"></td>
+                    <td id="jan11"></td>
+                    <td id="jan12"></td>
+                    <td id="jan13"></td>
+                    <td id="jan14"></td>
+                </tr>
+                <tr>
+                    <td id="janday8"></td>
+                    <td id="janday9"></td>
+                    <td id="janday10"></td>
+                    <td id="janday11"></td>
+                    <td id="janday12"></td>
+                    <td id="janday13"></td>
+                    <td id="janday14"></td>
+                </tr>
+                <tr>
+                    <td id="jan15"></td>
+                    <td id="jan16"></td>
+                    <td id="jan17"></td>
+                    <td id="jan18"></td>
+                    <td id="jan19"></td>
+                    <td id="jan20"></td>
+                    <td id="jan21"></td>
+                </tr>
+                <tr>
+                    <td id="janday15"></td>
+                    <td id="janday16"></td>
+                    <td id="janday17"></td>
+                    <td id="janday18"></td>
+                    <td id="janday19"></td>
+                    <td id="janday20"></td>
+                    <td id="janday21"></td>
+                </tr>
+                <tr>
+                    <td id="jan22"></td>
+                    <td id="jan23"></td>
+                    <td id="jan24"></td>
+                    <td id="jan25"></td>
+                    <td id="jan26"></td>
+                    <td id="jan27"></td>
+                    <td id="jan28"></td>
+                </tr>
+                <tr>
+                    <td id="janday22"></td>
+                    <td id="janday23"></td>
+                    <td id="janday24"></td>
+                    <td id="janday25"></td>
+                    <td id="janday26"></td>
+                    <td id="janday27"></td>
+                    <td id="janday28"></td>
+                </tr>
+                <tr>
+                    <td id="jan29"></td>
+                    <td id="jan30"></td>
+                    <td id="jan31"></td>
+                    <td id="jan32"></td>
+                    <td id="jan33"></td>
+                    <td id="jan34"></td>
+                    <td id="jan35"></td>
+                </tr>
+                <tr>
+                    <td id="janday29"></td>
+                    <td id="janday30"></td>
+                    <td id="janday31"></td>
+                    <td id="janday32"></td>
+                    <td id="janday33"></td>
+                    <td id="janday34"></td>
+                    <td id="janday35"></td>
+                </tr>
+                <tr>
+                    <td id="jan36"></td>
+                    <td id="jan37"></td>
+                    <td id="jan38"></td>
+                    <td id="jan39"></td>
+                    <td id="jan40"></td>
+                    <td id="jan41"></td>
+                    <td id="jan42"></td>
+                </tr>
+                <tr>
+                    <td id="janday36"></td>
+                    <td id="janday37"></td>
+                    <td id="janday38"></td>
+                    <td id="janday39"></td>
+                    <td id="janday40"></td>
+                    <td id="janday41"></td>
+                    <td id="janday42"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="month">
+            <h1 id="february">February</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="feb1"></td>
+                    <td id="feb2"></td>
+                    <td id="feb3"></td>
+                    <td id="feb4"></td>
+                    <td id="feb5"></td>
+                    <td id="feb6"></td>
+                    <td id="feb7"></td>
+                </tr>
+                <tr>
+                    <td id="febday1"></td>
+                    <td id="febday2"></td>
+                    <td id="febday3"></td>
+                    <td id="febday4"></td>
+                    <td id="febday5"></td>
+                    <td id="febday6"></td>
+                    <td id="febday7"></td>
+                </tr>
+                <tr>
+                    <td id="feb8"></td>
+                    <td id="feb9"></td>
+                    <td id="feb10"></td>
+                    <td id="feb11"></td>
+                    <td id="feb12"></td>
+                    <td id="feb13"></td>
+                    <td id="feb14"></td>
+                </tr>
+                <tr>
+                    <td id="febday8"></td>
+                    <td id="febday9"></td>
+                    <td id="febday10"></td>
+                    <td id="febday11"></td>
+                    <td id="febday12"></td>
+                    <td id="febday13"></td>
+                    <td id="febday14"></td>
+                </tr>
+                <tr>
+                    <td id="feb15"></td>
+                    <td id="feb16"></td>
+                    <td id="feb17"></td>
+                    <td id="feb18"></td>
+                    <td id="feb19"></td>
+                    <td id="feb20"></td>
+                    <td id="feb21"></td>
+                </tr>
+                <tr>
+                    <td id="febday15"></td>
+                    <td id="febday16"></td>
+                    <td id="febday17"></td>
+                    <td id="febday18"></td>
+                    <td id="febday19"></td>
+                    <td id="febday20"></td>
+                    <td id="febday21"></td>
+                </tr>
+                <tr>
+                    <td id="feb22"></td>
+                    <td id="feb23"></td>
+                    <td id="feb24"></td>
+                    <td id="feb25"></td>
+                    <td id="feb26"></td>
+                    <td id="feb27"></td>
+                    <td id="feb28"></td>
+                </tr>
+                <tr>
+                    <td id="febday22"></td>
+                    <td id="febday23"></td>
+                    <td id="febday24"></td>
+                    <td id="febday25"></td>
+                    <td id="febday26"></td>
+                    <td id="febday27"></td>
+                    <td id="febday28"></td>
+                </tr>
+                <tr>
+                    <td id="feb29"></td>
+                    <td id="feb30"></td>
+                    <td id="feb31"></td>
+                    <td id="feb32"></td>
+                    <td id="feb33"></td>
+                    <td id="feb34"></td>
+                    <td id="feb35"></td>
+                </tr>
+                <tr>
+                    <td id="febday29"></td>
+                    <td id="febday30"></td>
+                    <td id="febday31"></td>
+                    <td id="febday32"></td>
+                    <td id="febday33"></td>
+                    <td id="febday34"></td>
+                    <td id="febday35"></td>
+                </tr>
+                <tr>
+                    <td id="feb36"></td>
+                    <td id="feb37"></td>
+                    <td id="feb38"></td>
+                    <td id="feb39"></td>
+                    <td id="feb40"></td>
+                    <td id="feb41"></td>
+                    <td id="feb42"></td>
+                </tr>
+                <tr>
+                    <td id="febday36"></td>
+                    <td id="febday37"></td>
+                    <td id="febday38"></td>
+                    <td id="febday39"></td>
+                    <td id="febday40"></td>
+                    <td id="febday41"></td>
+                    <td id="febday42"></td>
+                </tr>
+            </table>
+        </div> 
+        <div class="month">
+            <h1 id="march">March</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="mar1"></td>
+                    <td id="mar2"></td>
+                    <td id="mar3"></td>
+                    <td id="mar4"></td>
+                    <td id="mar5"></td>
+                    <td id="mar6"></td>
+                    <td id="mar7"></td>
+                </tr>
+                <tr>
+                    <td id="marday1"></td>
+                    <td id="marday2"></td>
+                    <td id="marday3"></td>
+                    <td id="marday4"></td>
+                    <td id="marday5"></td>
+                    <td id="marday6"></td>
+                    <td id="marday7"></td>
+                </tr>
+                <tr>
+                    <td id="mar8"></td>
+                    <td id="mar9"></td>
+                    <td id="mar10"></td>
+                    <td id="mar11"></td>
+                    <td id="mar12"></td>
+                    <td id="mar13"></td>
+                    <td id="mar14"></td>
+                </tr>
+                <tr>
+                    <td id="marday8"></td>
+                    <td id="marday9"></td>
+                    <td id="marday10"></td>
+                    <td id="marday11"></td>
+                    <td id="marday12"></td>
+                    <td id="marday13"></td>
+                    <td id="marday14"></td>
+                </tr>
+                <tr>
+                    <td id="mar15"></td>
+                    <td id="mar16"></td>
+                    <td id="mar17"></td>
+                    <td id="mar18"></td>
+                    <td id="mar19"></td>
+                    <td id="mar20"></td>
+                    <td id="mar21"></td>
+                </tr>
+                <tr>
+                    <td id="marday15"></td>
+                    <td id="marday16"></td>
+                    <td id="marday17"></td>
+                    <td id="marday18"></td>
+                    <td id="marday19"></td>
+                    <td id="marday20"></td>
+                    <td id="marday21"></td>
+                </tr>
+                <tr>
+                    <td id="mar22"></td>
+                    <td id="mar23"></td>
+                    <td id="mar24"></td>
+                    <td id="mar25"></td>
+                    <td id="mar26"></td>
+                    <td id="mar27"></td>
+                    <td id="mar28"></td>
+                </tr>
+                <tr>
+                    <td id="marday22"></td>
+                    <td id="marday23"></td>
+                    <td id="marday24"></td>
+                    <td id="marday25"></td>
+                    <td id="marday26"></td>
+                    <td id="marday27"></td>
+                    <td id="marday28"></td>
+                </tr>
+                <tr>
+                    <td id="mar29"></td>
+                    <td id="mar30"></td>
+                    <td id="mar31"></td>
+                    <td id="mar32"></td>
+                    <td id="mar33"></td>
+                    <td id="mar34"></td>
+                    <td id="mar35"></td>
+                </tr>
+                <tr>
+                    <td id="marday29"></td>
+                    <td id="marday30"></td>
+                    <td id="marday31"></td>
+                    <td id="marday32"></td>
+                    <td id="marday33"></td>
+                    <td id="marday34"></td>
+                    <td id="marday35"></td>
+                </tr>
+                <tr>
+                    <td id="mar36"></td>
+                    <td id="mar37"></td>
+                    <td id="mar38"></td>
+                    <td id="mar39"></td>
+                    <td id="mar40"></td>
+                    <td id="mar41"></td>
+                    <td id="mar42"></td>
+                </tr>
+                <tr>
+                    <td id="marday36"></td>
+                    <td id="marday37"></td>
+                    <td id="marday38"></td>
+                    <td id="marday39"></td>
+                    <td id="marday40"></td>
+                    <td id="marday41"></td>
+                    <td id="marday42"></td>
+                </tr>            
+            </table>
+        </div>
+        <div class="month">
+            <h1 id="april">April</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="apr1"></td>
+                    <td id="apr2"></td>
+                    <td id="apr3"></td>
+                    <td id="apr4"></td>
+                    <td id="apr5"></td>
+                    <td id="apr6"></td>
+                    <td id="apr7"></td>
+                </tr>
+                <tr>
+                    <td id="aprday1"></td>
+                    <td id="aprday2"></td>
+                    <td id="aprday3"></td>
+                    <td id="aprday4"></td>
+                    <td id="aprday5"></td>
+                    <td id="aprday6"></td>
+                    <td id="aprday7"></td>
+                </tr>
+                <tr>
+                    <td id="apr8"></td>
+                    <td id="apr9"></td>
+                    <td id="apr10"></td>
+                    <td id="apr11"></td>
+                    <td id="apr12"></td>
+                    <td id="apr13"></td>
+                    <td id="apr14"></td>
+                </tr>
+                <tr>
+                    <td id="aprday8"></td>
+                    <td id="aprday9"></td>
+                    <td id="aprday10"></td>
+                    <td id="aprday11"></td>
+                    <td id="aprday12"></td>
+                    <td id="aprday13"></td>
+                    <td id="aprday14"></td>
+                </tr>
+                <tr>
+                    <td id="apr15"></td>
+                    <td id="apr16"></td>
+                    <td id="apr17"></td>
+                    <td id="apr18"></td>
+                    <td id="apr19"></td>
+                    <td id="apr20"></td>
+                    <td id="apr21"></td>
+                </tr>
+                <tr>
+                    <td id="aprday15"></td>
+                    <td id="aprday16"></td>
+                    <td id="aprday17"></td>
+                    <td id="aprday18"></td>
+                    <td id="aprday19"></td>
+                    <td id="aprday20"></td>
+                    <td id="aprday21"></td>
+                </tr>
+                <tr>
+                    <td id="apr22"></td>
+                    <td id="apr23"></td>
+                    <td id="apr24"></td>
+                    <td id="apr25"></td>
+                    <td id="apr26"></td>
+                    <td id="apr27"></td>
+                    <td id="apr28"></td>
+                </tr>
+                <tr>
+                    <td id="aprday22"></td>
+                    <td id="aprday23"></td>
+                    <td id="aprday24"></td>
+                    <td id="aprday25"></td>
+                    <td id="aprday26"></td>
+                    <td id="aprday27"></td>
+                    <td id="aprday28"></td>
+                </tr>
+                <tr>
+                    <td id="apr29"></td>
+                    <td id="apr30"></td>
+                    <td id="apr31"></td>
+                    <td id="apr32"></td>
+                    <td id="apr33"></td>
+                    <td id="apr34"></td>
+                    <td id="apr35"></td>
+                </tr>
+                <tr>
+                    <td id="aprday29"></td>
+                    <td id="aprday30"></td>
+                    <td id="aprday31"></td>
+                    <td id="aprday32"></td>
+                    <td id="aprday33"></td>
+                    <td id="aprday34"></td>
+                    <td id="aprday35"></td>
+                </tr>
+                <tr>
+                    <td id="apr36"></td>
+                    <td id="apr37"></td>
+                    <td id="apr38"></td>
+                    <td id="apr39"></td>
+                    <td id="apr40"></td>
+                    <td id="apr41"></td>
+                    <td id="apr42"></td>
+                </tr>
+                <tr>
+                    <td id="aprday36"></td>
+                    <td id="aprday37"></td>
+                    <td id="aprday38"></td>
+                    <td id="aprday39"></td>
+                    <td id="aprday40"></td>
+                    <td id="aprday41"></td>
+                    <td id="aprday42"></td>
+                </tr>
+            </table>
+        </div> 
+        <div class="month">
+            <h1 id="may">May</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="may1"></td>
+                    <td id="may2"></td>
+                    <td id="may3"></td>
+                    <td id="may4"></td>
+                    <td id="may5"></td>
+                    <td id="may6"></td>
+                    <td id="may7"></td>
+                </tr>
+                <tr>
+                    <td id="mayday1"></td>
+                    <td id="mayday2"></td>
+                    <td id="mayday3"></td>
+                    <td id="mayday4"></td>
+                    <td id="mayday5"></td>
+                    <td id="mayday6"></td>
+                    <td id="mayday7"></td>
+                </tr>
+                <tr>
+                    <td id="may8"></td>
+                    <td id="may9"></td>
+                    <td id="may10"></td>
+                    <td id="may11"></td>
+                    <td id="may12"></td>
+                    <td id="may13"></td>
+                    <td id="may14"></td>
+                </tr>
+                <tr>
+                    <td id="mayday8"></td>
+                    <td id="mayday9"></td>
+                    <td id="mayday10"></td>
+                    <td id="mayday11"></td>
+                    <td id="mayday12"></td>
+                    <td id="mayday13"></td>
+                    <td id="mayday14"></td>
+                </tr>
+                <tr>
+                    <td id="may15"></td>
+                    <td id="may16"></td>
+                    <td id="may17"></td>
+                    <td id="may18"></td>
+                    <td id="may19"></td>
+                    <td id="may20"></td>
+                    <td id="may21"></td>
+                </tr>
+                <tr>
+                    <td id="mayday15"></td>
+                    <td id="mayday16"></td>
+                    <td id="mayday17"></td>
+                    <td id="mayday18"></td>
+                    <td id="mayday19"></td>
+                    <td id="mayday20"></td>
+                    <td id="mayday21"></td>
+                </tr>
+                <tr>
+                    <td id="may22"></td>
+                    <td id="may23"></td>
+                    <td id="may24"></td>
+                    <td id="may25"></td>
+                    <td id="may26"></td>
+                    <td id="may27"></td>
+                    <td id="may28"></td>
+                </tr>
+                <tr>
+                    <td id="mayday22"></td>
+                    <td id="mayday23"></td>
+                    <td id="mayday24"></td>
+                    <td id="mayday25"></td>
+                    <td id="mayday26"></td>
+                    <td id="mayday27"></td>
+                    <td id="mayday28"></td>
+                </tr>
+                <tr>
+                    <td id="may29"></td>
+                    <td id="may30"></td>
+                    <td id="may31"></td>
+                    <td id="may32"></td>
+                    <td id="may33"></td>
+                    <td id="may34"></td>
+                    <td id="may35"></td>
+                </tr>
+                <tr>
+                    <td id="mayday29"></td>
+                    <td id="mayday30"></td>
+                    <td id="mayday31"></td>
+                    <td id="mayday32"></td>
+                    <td id="mayday33"></td>
+                    <td id="mayday34"></td>
+                    <td id="mayday35"></td>
+                </tr>
+                <tr>
+                    <td id="may36"></td>
+                    <td id="may37"></td>
+                    <td id="may38"></td>
+                    <td id="may39"></td>
+                    <td id="may40"></td>
+                    <td id="may41"></td>
+                    <td id="may42"></td>
+                </tr>
+                <tr>
+                    <td id="mayday36"></td>
+                    <td id="mayday37"></td>
+                    <td id="mayday38"></td>
+                    <td id="mayday39"></td>
+                    <td id="mayday40"></td>
+                    <td id="mayday41"></td>
+                    <td id="mayday42"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="month">
+            <h1 id="june">June</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="jun1"></td>
+                    <td id="jun2"></td>
+                    <td id="jun3"></td>
+                    <td id="jun4"></td>
+                    <td id="jun5"></td>
+                    <td id="jun6"></td>
+                    <td id="jun7"></td>
+                </tr>
+                <tr>
+                    <td id="junday1"></td>
+                    <td id="junday2"></td>
+                    <td id="junday3"></td>
+                    <td id="junday4"></td>
+                    <td id="junday5"></td>
+                    <td id="junday6"></td>
+                    <td id="junday7"></td>
+                </tr>
+                <tr>
+                    <td id="jun8"></td>
+                    <td id="jun9"></td>
+                    <td id="jun10"></td>
+                    <td id="jun11"></td>
+                    <td id="jun12"></td>
+                    <td id="jun13"></td>
+                    <td id="jun14"></td>
+                </tr>
+                <tr>
+                    <td id="junday8"></td>
+                    <td id="junday9"></td>
+                    <td id="junday10"></td>
+                    <td id="junday11"></td>
+                    <td id="junday12"></td>
+                    <td id="junday13"></td>
+                    <td id="junday14"></td>
+                </tr>
+                <tr>
+                    <td id="jun15"></td>
+                    <td id="jun16"></td>
+                    <td id="jun17"></td>
+                    <td id="jun18"></td>
+                    <td id="jun19"></td>
+                    <td id="jun20"></td>
+                    <td id="jun21"></td>
+                </tr>
+                <tr>
+                    <td id="junday15"></td>
+                    <td id="junday16"></td>
+                    <td id="junday17"></td>
+                    <td id="junday18"></td>
+                    <td id="junday19"></td>
+                    <td id="junday20"></td>
+                    <td id="junday21"></td>
+                </tr>
+                <tr>
+                    <td id="jun22"></td>
+                    <td id="jun23"></td>
+                    <td id="jun24"></td>
+                    <td id="jun25"></td>
+                    <td id="jun26"></td>
+                    <td id="jun27"></td>
+                    <td id="jun28"></td>
+                </tr>
+                <tr>
+                    <td id="junday22"></td>
+                    <td id="junday23"></td>
+                    <td id="junday24"></td>
+                    <td id="junday25"></td>
+                    <td id="junday26"></td>
+                    <td id="junday27"></td>
+                    <td id="junday28"></td>
+                </tr>
+                <tr>
+                    <td id="jun29"></td>
+                    <td id="jun30"></td>
+                    <td id="jun31"></td>
+                    <td id="jun32"></td>
+                    <td id="jun33"></td>
+                    <td id="jun34"></td>
+                    <td id="jun35"></td>
+                </tr>
+                <tr>
+                    <td id="junday29"></td>
+                    <td id="junday30"></td>
+                    <td id="junday31"></td>
+                    <td id="junday32"></td>
+                    <td id="junday33"></td>
+                    <td id="junday34"></td>
+                    <td id="junday35"></td>
+                </tr>
+                <tr>
+                    <td id="jun36"></td>
+                    <td id="jun37"></td>
+                    <td id="jun38"></td>
+                    <td id="jun39"></td>
+                    <td id="jun40"></td>
+                    <td id="jun41"></td>
+                    <td id="jun42"></td>
+                </tr>
+                <tr>
+                    <td id="junday36"></td>
+                    <td id="junday37"></td>
+                    <td id="junday38"></td>
+                    <td id="junday39"></td>
+                    <td id="junday40"></td>
+                    <td id="junday41"></td>
+                    <td id="junday42"></td>
+                </tr>
+            </table>
+        </div> 
+        <div class="month">
+            <h1 id="july">July</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="jul1"></td>
+                    <td id="jul2"></td>
+                    <td id="jul3"></td>
+                    <td id="jul4"></td>
+                    <td id="jul5"></td>
+                    <td id="jul6"></td>
+                    <td id="jul7"></td>
+                </tr>
+                <tr>
+                    <td id="julday1"></td>
+                    <td id="julday2"></td>
+                    <td id="julday3"></td>
+                    <td id="julday4"></td>
+                    <td id="julday5"></td>
+                    <td id="julday6"></td>
+                    <td id="julday7"></td>
+                </tr>
+                <tr>
+                    <td id="jul8"></td>
+                    <td id="jul9"></td>
+                    <td id="jul10"></td>
+                    <td id="jul11"></td>
+                    <td id="jul12"></td>
+                    <td id="jul13"></td>
+                    <td id="jul14"></td>
+                </tr>
+                <tr>
+                    <td id="julday8"></td>
+                    <td id="julday9"></td>
+                    <td id="julday10"></td>
+                    <td id="julday11"></td>
+                    <td id="julday12"></td>
+                    <td id="julday13"></td>
+                    <td id="julday14"></td>
+                </tr>
+                <tr>
+                    <td id="jul15"></td>
+                    <td id="jul16"></td>
+                    <td id="jul17"></td>
+                    <td id="jul18"></td>
+                    <td id="jul19"></td>
+                    <td id="jul20"></td>
+                    <td id="jul21"></td>
+                </tr>
+                <tr>
+                    <td id="julday15"></td>
+                    <td id="julday16"></td>
+                    <td id="julday17"></td>
+                    <td id="julday18"></td>
+                    <td id="julday19"></td>
+                    <td id="julday20"></td>
+                    <td id="julday21"></td>
+                </tr>
+                <tr>
+                    <td id="jul22"></td>
+                    <td id="jul23"></td>
+                    <td id="jul24"></td>
+                    <td id="jul25"></td>
+                    <td id="jul26"></td>
+                    <td id="jul27"></td>
+                    <td id="jul28"></td>
+                </tr>
+                <tr>
+                    <td id="julday22"></td>
+                    <td id="julday23"></td>
+                    <td id="julday24"></td>
+                    <td id="julday25"></td>
+                    <td id="julday26"></td>
+                    <td id="julday27"></td>
+                    <td id="julday28"></td>
+                </tr>
+                <tr>
+                    <td id="jul29"></td>
+                    <td id="jul30"></td>
+                    <td id="jul31"></td>
+                    <td id="jul32"></td>
+                    <td id="jul33"></td>
+                    <td id="jul34"></td>
+                    <td id="jul35"></td>
+                </tr>
+                <tr>
+                    <td id="julday29"></td>
+                    <td id="julday30"></td>
+                    <td id="julday31"></td>
+                    <td id="julday32"></td>
+                    <td id="julday33"></td>
+                    <td id="julday34"></td>
+                    <td id="julday35"></td>
+                </tr>
+                <tr>
+                    <td id="jul36"></td>
+                    <td id="jul37"></td>
+                    <td id="jul38"></td>
+                    <td id="jul39"></td>
+                    <td id="jul40"></td>
+                    <td id="jul41"></td>
+                    <td id="jul42"></td>
+                </tr>
+                <tr>
+                    <td id="julday36"></td>
+                    <td id="julday37"></td>
+                    <td id="julday38"></td>
+                    <td id="julday39"></td>
+                    <td id="julday40"></td>
+                    <td id="julday41"></td>
+                    <td id="julday42"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="month">
+            <h1 id="august">August</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="aug1"></td>
+                    <td id="aug2"></td>
+                    <td id="aug3"></td>
+                    <td id="aug4"></td>
+                    <td id="aug5"></td>
+                    <td id="aug6"></td>
+                    <td id="aug7"></td>
+                </tr>
+                <tr>
+                    <td id="augday1"></td>
+                    <td id="augday2"></td>
+                    <td id="augday3"></td>
+                    <td id="augday4"></td>
+                    <td id="augday5"></td>
+                    <td id="augday6"></td>
+                    <td id="augday7"></td>
+                </tr>
+                <tr>
+                    <td id="aug8"></td>
+                    <td id="aug9"></td>
+                    <td id="aug10"></td>
+                    <td id="aug11"></td>
+                    <td id="aug12"></td>
+                    <td id="aug13"></td>
+                    <td id="aug14"></td>
+                </tr>
+                <tr>
+                    <td id="augday8"></td>
+                    <td id="augday9"></td>
+                    <td id="augday10"></td>
+                    <td id="augday11"></td>
+                    <td id="augday12"></td>
+                    <td id="augday13"></td>
+                    <td id="augday14"></td>
+                </tr>
+                <tr>
+                    <td id="aug15"></td>
+                    <td id="aug16"></td>
+                    <td id="aug17"></td>
+                    <td id="aug18"></td>
+                    <td id="aug19"></td>
+                    <td id="aug20"></td>
+                    <td id="aug21"></td>
+                </tr>
+                <tr>
+                    <td id="augday15"></td>
+                    <td id="augday16"></td>
+                    <td id="augday17"></td>
+                    <td id="augday18"></td>
+                    <td id="augday19"></td>
+                    <td id="augday20"></td>
+                    <td id="augday21"></td>
+                </tr>
+                <tr>
+                    <td id="aug22"></td>
+                    <td id="aug23"></td>
+                    <td id="aug24"></td>
+                    <td id="aug25"></td>
+                    <td id="aug26"></td>
+                    <td id="aug27"></td>
+                    <td id="aug28"></td>
+                </tr>
+                <tr>
+                    <td id="augday22"></td>
+                    <td id="augday23"></td>
+                    <td id="augday24"></td>
+                    <td id="augday25"></td>
+                    <td id="augday26"></td>
+                    <td id="augday27"></td>
+                    <td id="augday28"></td>
+                </tr>
+                <tr>
+                    <td id="aug29"></td>
+                    <td id="aug30"></td>
+                    <td id="aug31"></td>
+                    <td id="aug32"></td>
+                    <td id="aug33"></td>
+                    <td id="aug34"></td>
+                    <td id="aug35"></td>
+                </tr>
+                <tr>
+                    <td id="augday29"></td>
+                    <td id="augday30"></td>
+                    <td id="augday31"></td>
+                    <td id="augday32"></td>
+                    <td id="augday33"></td>
+                    <td id="augday34"></td>
+                    <td id="augday35"></td>
+                </tr>
+                <tr>
+                    <td id="aug36"></td>
+                    <td id="aug37"></td>
+                    <td id="aug38"></td>
+                    <td id="aug39"></td>
+                    <td id="aug40"></td>
+                    <td id="aug41"></td>
+                    <td id="aug42"></td>
+                </tr>
+                <tr>
+                    <td id="augday36"></td>
+                    <td id="augday37"></td>
+                    <td id="augday38"></td>
+                    <td id="augday39"></td>
+                    <td id="augday40"></td>
+                    <td id="augday41"></td>
+                    <td id="augday42"></td>
+                </tr>
+            </table>
+        </div> 
+        <div class="month">
+            <h1 id="september">September</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="sep1"></td>
+                    <td id="sep2"></td>
+                    <td id="sep3"></td>
+                    <td id="sep4"></td>
+                    <td id="sep5"></td>
+                    <td id="sep6"></td>
+                    <td id="sep7"></td>
+                </tr>
+                <tr>
+                    <td id="sepday1"></td>
+                    <td id="sepday2"></td>
+                    <td id="sepday3"></td>
+                    <td id="sepday4"></td>
+                    <td id="sepday5"></td>
+                    <td id="sepday6"></td>
+                    <td id="sepday7"></td>
+                </tr>
+                <tr>
+                    <td id="sep8"></td>
+                    <td id="sep9"></td>
+                    <td id="sep10"></td>
+                    <td id="sep11"></td>
+                    <td id="sep12"></td>
+                    <td id="sep13"></td>
+                    <td id="sep14"></td>
+                </tr>
+                <tr>
+                    <td id="sepday8"></td>
+                    <td id="sepday9"></td>
+                    <td id="sepday10"></td>
+                    <td id="sepday11"></td>
+                    <td id="sepday12"></td>
+                    <td id="sepday13"></td>
+                    <td id="sepday14"></td>
+                </tr>
+                <tr>
+                    <td id="sep15"></td>
+                    <td id="sep16"></td>
+                    <td id="sep17"></td>
+                    <td id="sep18"></td>
+                    <td id="sep19"></td>
+                    <td id="sep20"></td>
+                    <td id="sep21"></td>
+                </tr>
+                <tr>
+                    <td id="sepday15"></td>
+                    <td id="sepday16"></td>
+                    <td id="sepday17"></td>
+                    <td id="sepday18"></td>
+                    <td id="sepday19"></td>
+                    <td id="sepday20"></td>
+                    <td id="sepday21"></td>
+                </tr>
+                <tr>
+                    <td id="sep22"></td>
+                    <td id="sep23"></td>
+                    <td id="sep24"></td>
+                    <td id="sep25"></td>
+                    <td id="sep26"></td>
+                    <td id="sep27"></td>
+                    <td id="sep28"></td>
+                </tr>
+                <tr>
+                    <td id="sepday22"></td>
+                    <td id="sepday23"></td>
+                    <td id="sepday24"></td>
+                    <td id="sepday25"></td>
+                    <td id="sepday26"></td>
+                    <td id="sepday27"></td>
+                    <td id="sepday28"></td>
+                </tr>
+                <tr>
+                    <td id="sep29"></td>
+                    <td id="sep30"></td>
+                    <td id="sep31"></td>
+                    <td id="sep32"></td>
+                    <td id="sep33"></td>
+                    <td id="sep34"></td>
+                    <td id="sep35"></td>
+                </tr>
+                <tr>
+                    <td id="sepday29"></td>
+                    <td id="sepday30"></td>
+                    <td id="sepday31"></td>
+                    <td id="sepday32"></td>
+                    <td id="sepday33"></td>
+                    <td id="sepday34"></td>
+                    <td id="sepday35"></td>
+                </tr>
+                <tr>
+                    <td id="sep36"></td>
+                    <td id="sep37"></td>
+                    <td id="sep38"></td>
+                    <td id="sep39"></td>
+                    <td id="sep40"></td>
+                    <td id="sep41"></td>
+                    <td id="sep42"></td>
+                </tr>
+                <tr>
+                    <td id="sepday36"></td>
+                    <td id="sepday37"></td>
+                    <td id="sepday38"></td>
+                    <td id="sepday39"></td>
+                    <td id="sepday40"></td>
+                    <td id="sepday41"></td>
+                    <td id="sepday42"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="month">
+            <h1 id="october">October</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="oct1"></td>
+                    <td id="oct2"></td>
+                    <td id="oct3"></td>
+                    <td id="oct4"></td>
+                    <td id="oct5"></td>
+                    <td id="oct6"></td>
+                    <td id="oct7"></td>
+                </tr>
+                <tr>
+                    <td id="octday1"></td>
+                    <td id="octday2"></td>
+                    <td id="octday3"></td>
+                    <td id="octday4"></td>
+                    <td id="octday5"></td>
+                    <td id="octday6"></td>
+                    <td id="octday7"></td>
+                </tr>
+                <tr>
+                    <td id="oct8"></td>
+                    <td id="oct9"></td>
+                    <td id="oct10"></td>
+                    <td id="oct11"></td>
+                    <td id="oct12"></td>
+                    <td id="oct13"></td>
+                    <td id="oct14"></td>
+                </tr>
+                <tr>
+                    <td id="octday8"></td>
+                    <td id="octday9"></td>
+                    <td id="octday10"></td>
+                    <td id="octday11"></td>
+                    <td id="octday12"></td>
+                    <td id="octday13"></td>
+                    <td id="octday14"></td>
+                </tr>
+                <tr>
+                    <td id="oct15"></td>
+                    <td id="oct16"></td>
+                    <td id="oct17"></td>
+                    <td id="oct18"></td>
+                    <td id="oct19"></td>
+                    <td id="oct20"></td>
+                    <td id="oct21"></td>
+                </tr>
+                <tr>
+                    <td id="octday15"></td>
+                    <td id="octday16"></td>
+                    <td id="octday17"></td>
+                    <td id="octday18"></td>
+                    <td id="octday19"></td>
+                    <td id="octday20"></td>
+                    <td id="octday21"></td>
+                </tr>
+                <tr>
+                    <td id="oct22"></td>
+                    <td id="oct23"></td>
+                    <td id="oct24"></td>
+                    <td id="oct25"></td>
+                    <td id="oct26"></td>
+                    <td id="oct27"></td>
+                    <td id="oct28"></td>
+                </tr>
+                <tr>
+                    <td id="octday22"></td>
+                    <td id="octday23"></td>
+                    <td id="octday24"></td>
+                    <td id="octday25"></td>
+                    <td id="octday26"></td>
+                    <td id="octday27"></td>
+                    <td id="octday28"></td>
+                </tr>
+                <tr>
+                    <td id="oct29"></td>
+                    <td id="oct30"></td>
+                    <td id="oct31"></td>
+                    <td id="oct32"></td>
+                    <td id="oct33"></td>
+                    <td id="oct34"></td>
+                    <td id="oct35"></td>
+                </tr>
+                <tr>
+                    <td id="octday29"></td>
+                    <td id="octday30"></td>
+                    <td id="octday31"></td>
+                    <td id="octday32"></td>
+                    <td id="octday33"></td>
+                    <td id="octday34"></td>
+                    <td id="octday35"></td>
+                </tr>
+                <tr>
+                    <td id="oct36"></td>
+                    <td id="oct37"></td>
+                    <td id="oct38"></td>
+                    <td id="oct39"></td>
+                    <td id="oct40"></td>
+                    <td id="oct41"></td>
+                    <td id="oct42"></td>
+                </tr>
+                <tr>
+                    <td id="octday36"></td>
+                    <td id="octday37"></td>
+                    <td id="octday38"></td>
+                    <td id="octday39"></td>
+                    <td id="octday40"></td>
+                    <td id="octday41"></td>
+                    <td id="octday42"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="month">
+            <h1 id="november">November</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="nov1"></td>
+                    <td id="nov2"></td>
+                    <td id="nov3"></td>
+                    <td id="nov4"></td>
+                    <td id="nov5"></td>
+                    <td id="nov6"></td>
+                    <td id="nov7"></td>
+                </tr>
+                <tr>
+                    <td id="novday1"></td>
+                    <td id="novday2"></td>
+                    <td id="novday3"></td>
+                    <td id="novday4"></td>
+                    <td id="novday5"></td>
+                    <td id="novday6"></td>
+                    <td id="novday7"></td>
+                </tr>
+                <tr>
+                    <td id="nov8"></td>
+                    <td id="nov9"></td>
+                    <td id="nov10"></td>
+                    <td id="nov11"></td>
+                    <td id="nov12"></td>
+                    <td id="nov13"></td>
+                    <td id="nov14"></td>
+                </tr>
+                <tr>
+                    <td id="novday8"></td>
+                    <td id="novday9"></td>
+                    <td id="novday10"></td>
+                    <td id="novday11"></td>
+                    <td id="novday12"></td>
+                    <td id="novday13"></td>
+                    <td id="novday14"></td>
+                </tr>
+                <tr>
+                    <td id="nov15"></td>
+                    <td id="nov16"></td>
+                    <td id="nov17"></td>
+                    <td id="nov18"></td>
+                    <td id="nov19"></td>
+                    <td id="nov20"></td>
+                    <td id="nov21"></td>
+                </tr>
+                <tr>
+                    <td id="novday15"></td>
+                    <td id="novday16"></td>
+                    <td id="novday17"></td>
+                    <td id="novday18"></td>
+                    <td id="novday19"></td>
+                    <td id="novday20"></td>
+                    <td id="novday21"></td>
+                </tr>
+                <tr>
+                    <td id="nov22"></td>
+                    <td id="nov23"></td>
+                    <td id="nov24"></td>
+                    <td id="nov25"></td>
+                    <td id="nov26"></td>
+                    <td id="nov27"></td>
+                    <td id="nov28"></td>
+                </tr>
+                <tr>
+                    <td id="novday22"></td>
+                    <td id="novday23"></td>
+                    <td id="novday24"></td>
+                    <td id="novday25"></td>
+                    <td id="novday26"></td>
+                    <td id="novday27"></td>
+                    <td id="novday28"></td>
+                </tr>
+                <tr>
+                    <td id="nov29"></td>
+                    <td id="nov30"></td>
+                    <td id="nov31"></td>
+                    <td id="nov32"></td>
+                    <td id="nov33"></td>
+                    <td id="nov34"></td>
+                    <td id="nov35"></td>
+                </tr>
+                <tr>
+                    <td id="novday29"></td>
+                    <td id="novday30"></td>
+                    <td id="novday31"></td>
+                    <td id="novday32"></td>
+                    <td id="novday33"></td>
+                    <td id="novday34"></td>
+                    <td id="novday35"></td>
+                </tr>
+                <tr>
+                    <td id="nov36"></td>
+                    <td id="nov37"></td>
+                    <td id="nov38"></td>
+                    <td id="nov39"></td>
+                    <td id="nov40"></td>
+                    <td id="nov41"></td>
+                    <td id="nov42"></td>
+                </tr>
+                <tr>
+                    <td id="novday36"></td>
+                    <td id="novday37"></td>
+                    <td id="novday38"></td>
+                    <td id="novday39"></td>
+                    <td id="novday40"></td>
+                    <td id="novday41"></td>
+                    <td id="novday42"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="month">
+            <h1 id="december">December</h1>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td id="dec1"></td>
+                    <td id="dec2"></td>
+                    <td id="dec3"></td>
+                    <td id="dec4"></td>
+                    <td id="dec5"></td>
+                    <td id="dec6"></td>
+                    <td id="dec7"></td>
+                </tr>
+                <tr>
+                    <td id="decday1"></td>
+                    <td id="decday2"></td>
+                    <td id="decday3"></td>
+                    <td id="decday4"></td>
+                    <td id="decday5"></td>
+                    <td id="decday6"></td>
+                    <td id="decday7"></td>
+                </tr>
+                <tr>
+                    <td id="dec8"></td>
+                    <td id="dec9"></td>
+                    <td id="dec10"></td>
+                    <td id="dec11"></td>
+                    <td id="dec12"></td>
+                    <td id="dec13"></td>
+                    <td id="dec14"></td>
+                </tr>
+                <tr>
+                    <td id="decday8"></td>
+                    <td id="decday9"></td>
+                    <td id="decday10"></td>
+                    <td id="decday11"></td>
+                    <td id="decday12"></td>
+                    <td id="decday13"></td>
+                    <td id="decday14"></td>
+                </tr>
+                <tr>
+                    <td id="dec15"></td>
+                    <td id="dec16"></td>
+                    <td id="dec17"></td>
+                    <td id="dec18"></td>
+                    <td id="dec19"></td>
+                    <td id="dec20"></td>
+                    <td id="dec21"></td>
+                </tr>
+                <tr>
+                    <td id="decday15"></td>
+                    <td id="decday16"></td>
+                    <td id="decday17"></td>
+                    <td id="decday18"></td>
+                    <td id="decday19"></td>
+                    <td id="decday20"></td>
+                    <td id="decday21"></td>
+                </tr>
+                <tr>
+                    <td id="dec22"></td>
+                    <td id="dec23"></td>
+                    <td id="dec24"></td>
+                    <td id="dec25"></td>
+                    <td id="dec26"></td>
+                    <td id="dec27"></td>
+                    <td id="dec28"></td>
+                </tr>
+                <tr>
+                    <td id="decday22"></td>
+                    <td id="decday23"></td>
+                    <td id="decday24"></td>
+                    <td id="decday25"></td>
+                    <td id="decday26"></td>
+                    <td id="decday27"></td>
+                    <td id="decday28"></td>
+                </tr>
+                <tr>
+                    <td id="dec29"></td>
+                    <td id="dec30"></td>
+                    <td id="dec31"></td>
+                    <td id="dec32"></td>
+                    <td id="dec33"></td>
+                    <td id="dec34"></td>
+                    <td id="dec35"></td>
+                </tr>
+                <tr>
+                    <td id="decday29"></td>
+                    <td id="decday30"></td>
+                    <td id="decday31"></td>
+                    <td id="decday32"></td>
+                    <td id="decday33"></td>
+                    <td id="decday34"></td>
+                    <td id="decday35"></td>
+                </tr>
+                <tr>
+                    <td id="dec36"></td>
+                    <td id="dec37"></td>
+                    <td id="dec38"></td>
+                    <td id="dec39"></td>
+                    <td id="dec40"></td>
+                    <td id="dec41"></td>
+                    <td id="dec42"></td>
+                </tr>
+                <tr>
+                    <td id="decday36"></td>
+                    <td id="decday37"></td>
+                    <td id="decday38"></td>
+                    <td id="decday39"></td>
+                    <td id="decday40"></td>
+                    <td id="decday41"></td>
+                    <td id="decday42"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+    <script src="data.js"></script>
+    <script src="cal.js"></script>    
+</body>
+</html>
