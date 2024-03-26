@@ -60,8 +60,8 @@ function startingFunction() {       // This function is called when the page loa
 
     document.getElementById("year").innerHTML=year;
     
-    populateArrays(year);           // This calls the function to creates the starting day and month arrays
     setArrays(year,group,boro,shift);
+    populateArrays(year);           // This calls the function to creates the starting day and month arrays
 }
 
 
@@ -74,10 +74,10 @@ form.addEventListener("submit", (e) => {
     let shift = form["shift"].value;
 
     document.getElementById("year").innerHTML=year;
-
+    
+    setArrays(year,group,boro,shift);
     clearCalendar();
     populateArrays(year);
-    setArrays(year,group,boro,shift);
 })
 
 function clearCalendar() {
