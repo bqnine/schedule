@@ -1,8 +1,9 @@
 
 const monthNames = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov",'dec'];
 
+// This function puts the schedule rotation on the calendar
+
 function fillRotation(startDate, endDate, monthName) {
-    rotationCounter = 1;
      for (let x = startDate; x < endDate; x++) {
          document.getElementById(monthName + "day" + x).innerHTML = schedule[rotationCounter];
          document.getElementById(monthName + "day" + x).style.fontSize = "15px";
@@ -18,6 +19,7 @@ function populateArrays(year) {
     for (let x = 1; x < 13; x++) {
         let dt = new Date(year + ',' + x + ',1').getDay();
         firstDayOfMonth.push(dt + 1);  
+        rotationCounter = firstDayOfMonth[0] - 1;  // rotation Counter starts on January's first day of the month minus 1 for correct array index in schedule
     }
     
     // This for loop populates the number of days in a month into the array daysInMonth
@@ -28,7 +30,9 @@ function populateArrays(year) {
     for (x = 0; x < 13; x++) {
         populate(firstDayOfMonth[x], daysInMonth[x], monthNames[x]);
     }
-
+    
+    //
+    
     // Populates the schedule in the calendar by sending data to the function fillRotation()
     for (x = 0; x < 12; x++) {
         rotationStartDay = firstDayOfMonth[x];
@@ -60,7 +64,7 @@ function startingFunction() {       // This function is called when the page loa
 
     document.getElementById("year").innerHTML=year;
     
-    setArrays(year,group,boro,shift);
+    setArrays(year,group,boro,shift);  // setArrays is a function in data.js
     populateArrays(year);           // This calls the function to creates the starting day and month arrays
 }
 
@@ -74,8 +78,8 @@ form.addEventListener("submit", (e) => {
     let shift = form["shift"].value;
 
     document.getElementById("year").innerHTML=year;
-    
-    setArrays(year,group,boro,shift);
+
+    setArrays(year,group,boro,shift);  // setArrays is a function in data.js
     clearCalendar();
     populateArrays(year);
 })
