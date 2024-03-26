@@ -1,22 +1,49 @@
 .flex-container {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    align-content: space-around;
     justify-content: center;
-    gap: 20px;
-    column-gap: 30px;
+    gap: 2rem;
 }
+
 
 #year {
     text-align: center;
-    font-size: 4em;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 20px;
 }
 
-@media (max-width: 450px) {
-    .flex-item-right, .flex-item-left {
-        flex: 100%;
-    }
-}
 .month {
     text-align: center;
 }
+
+#selections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#boroselection {
+    margin-right: 25px;
+}
+
+#hourselection {
+    
+}
+
+#groupselection {
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+#yearselection {
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+#submitbutton {
+    
+}
+
+*/
