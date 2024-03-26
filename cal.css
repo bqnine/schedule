@@ -41,3 +41,15 @@
     margin-right: 25px;
     margin-left: 10px;
 }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 15px;
+    }
+    
+    div {
+        height: 100px;
+        width: 100px;
+    }
+    
+}
