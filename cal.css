@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 375px) {
+    .flex-container {
+        display:block;
+    }
+    
     h1 {
         font-size: 15px;
     }
