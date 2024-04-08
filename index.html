@@ -9,19 +9,18 @@
 <body onload="startingFunction();">
   <div class="choices">
     <form id="selections"> 
-        <div id="boroselection">
-          <input type="radio" id="brooklyn" name="boro" value="brooklyn">
-          <label for="brooklyn">Brooklyn</label>
-          <input type="radio" id="queens" name="boro" value="queens" checked="checked">
-          <label for="group 1">Queens</label>
-        </div>
-        <div id="hourselection">      
-          <input type="radio" id="shift8" name="shift" value="eighthours">
-          <label for="eight hours">Eight Hours</label>
-          <input type="radio" id="shift12" name="shift" value="twelvehours" checked="checked">
-          <label for="twelve hours">Twelve Hours</label>
-        </div>
-        <div id="groupselection">  
+
+          <select name="boro" id="boro">
+            <option value="queens">Queens</option>
+            <option value="brooklyn">Brooklyn</option>
+          </select>
+        
+          <select name="name" id="shift">
+            <option value="twelvehours">12 hours</option>
+            <option value="eighthour">8 hours</option>
+          </select>
+        
+          
           <select name="name" id="selectgroup">
             <option value="0">Group 1</option>
             <option value="1">Group 2</option>
@@ -29,8 +28,8 @@
             <option value="3">Group 4</option>
             <option value="4">Group 5</option>
           </select>
-        </div>
-        <div id="yearselection">  
+        
+         
           <select name="year" id="selectyear">
             <option value="2024">2024</option>
             <option value="2025">2025</option>
@@ -40,12 +39,12 @@
             <option value="2029">2029</option>
             <option value="2030">2030</option>
           </select>
-        </div>  
+          
         <input id="submitbutton" type="submit" value="Submit" />    
     </form>
   </div>   
    
-    <div id="year">This is where the year value goes!!!</div>
+    <div id="year"></div>
     <div class="flex-container">
     <div class="month">
         <h1 id="january">January</h1>

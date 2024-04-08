@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    overflow-x:auto;
 }
 
 
@@ -24,39 +25,34 @@
 }
 
 
-#boroselection {
+#boro {
     margin-right: 25px;
 }
 
-#hourselection {
-    
+#shift {
+    margin-right: 20px;
 }
 
-#groupselection {
-    margin-right: 25px;
-    margin-left: 10px;
-}
-
-#yearselection {
+#selectgroup {
     margin-right: 25px;
     margin-left: 10px;
 }
+
+#selectyear {
+    margin-right: 35px;
+    margin-left: 10px;
+}
+
 
 @media (max-width: 500px) {
     .flex-container {
-        display:block;
-    }
-    
-    h1 {
-        font-size: 15px;
-    }
-    table {
-        font-size 12px;
+        display: block;
+        
     }
 
-    div {
-        height: 100px;
-        width: 100px;
+    table {
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
